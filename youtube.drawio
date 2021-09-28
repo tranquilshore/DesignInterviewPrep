@@ -1,0 +1,163 @@
+<mxfile>
+    <diagram id="wvJOqiLnQEEwEsHGZJ1x" name="Page-1">
+        <mxGraphModel dx="990" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="2100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Client" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="320" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="11">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Reverse Proxy also act as Layer 7 LB" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="220" width="50" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="520" y="185" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" value="User Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="160" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7" target="16">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="7" target="29">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Upload Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="250" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="8" target="29">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8" target="31">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="490" y="365"/>
+                            <mxPoint x="490" y="110"/>
+                            <mxPoint x="820" y="110"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="Stream Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="340" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="9" target="29">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9" target="21">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Thumbnail Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="430" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="10" target="29">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Comment Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="530" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="11">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="580" y="400" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="Like Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="620" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Cache &amp;amp; User DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="155" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="16">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="760" y="275" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="Distributed Message Queue Topics: 1080p,730p etc." style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;direction=south;" vertex="1" parent="1">
+                    <mxGeometry x="540" y="245" width="170" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="18" target="31">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="770" y="245" width="100" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="19">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="830" y="410" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="Video Processing Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="780" y="255" width="100" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="21" target="37">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Thumbnail Storage" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="775" y="410" width="110" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="Cache &amp;amp; MetaData DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="327.5" width="90" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="Block Storage Videos" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="765" y="130" width="110" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="37">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="747.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" value="Video &amp;amp; Image Cache" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="710" width="90" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="40">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="110" y="420" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="CDN" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="722.5" width="90" height="62.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="&lt;h1&gt;Reverse Proxy&lt;/h1&gt;&lt;p&gt;Anonimity on the server side. Authorization &amp;amp; Authentication.&lt;/p&gt;&lt;p&gt;Compresses Request &amp;amp; Response Sizes helps improve bandwidth&lt;/p&gt;&lt;p&gt;TLS termination, Every service doesn't need to handle it. Encryption and Decription of resposes.&lt;/p&gt;&lt;p&gt;Rate Limiting&amp;nbsp;&lt;/p&gt;&lt;p&gt;Layer 7 Load Balancing and hence caching as at layer 7 data and header are visible.&lt;/p&gt;&lt;p&gt;Logging can be implemented for analytics and reporting.&lt;/p&gt;&lt;p&gt;Provide security features like firewall.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="45" y="830" width="460" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="&lt;h1&gt;Storage Types&lt;/h1&gt;&lt;p&gt;File Storage:&amp;nbsp;&lt;/p&gt;&lt;p&gt;1. Store files together as Hirarchical directory structure&lt;/p&gt;&lt;p&gt;2. Files as access via NAS(Network attached storage)&lt;/p&gt;&lt;p&gt;3. Multiple access to shared directory over a network and easily hog up the network and hence latency issues.&lt;/p&gt;&lt;p&gt;Block Storage: (flat structure)&lt;/p&gt;&lt;p&gt;1. Files are broken into blocks(randomly). Blocks are made out of only content and no meta data is stored.&lt;/p&gt;&lt;p&gt;2. Accessed via SAN(Storage Area Network). It consists of servers which stores all block informations related to a file. Very less latency.&lt;/p&gt;&lt;p&gt;3. Can't perform any range or sort queries over data as meta data is not stored related to any block or file.&lt;/p&gt;&lt;p&gt;Object Storage:&lt;/p&gt;&lt;p&gt;1. Data is stored as objects in a group(as a repo) (not random unlike block storage) (flat structure unlike file storage which is heirarchical)&lt;/p&gt;&lt;p&gt;2. Attaches meta data to objects as a repo (file,date,type,use etc) which is used for query.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="535" y="840" width="430" height="450" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="&lt;h1&gt;Caching &amp;amp; Strategies&lt;/h1&gt;&lt;p&gt;Write Through: Any put is synchronously completed with the DB. Adds a latency of an extra hop whenever cache miss happens.&lt;/p&gt;&lt;p&gt;Write Around: Here cache sits aside and only serves cache hits, whenver cache miss happens, the client asks DB and DB also updates the cache for the same.&lt;/p&gt;&lt;p&gt;Write Back: Difficult to implement, but can help with heavy write loads. It accepts all get and puts and asynchronously updates DB.&amp;nbsp;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="1090" width="450" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="&lt;h1&gt;Locks&lt;/h1&gt;&lt;p&gt;Pessimistic Locks: Sees the world carefully and ready for the worst case.&lt;/p&gt;&lt;p&gt;Before updating the record/row it'll lock it, so it can only perform the update and noone else can, once done, it releases the lock.&lt;/p&gt;&lt;p&gt;Optimistic Locks: Sees world optimistically as nothing wrong can happen.&lt;/p&gt;&lt;p&gt;Maintains a version with every row/record. If its updating the record, if the version if same when he read it and when its updating then it will update the record else discard it.&lt;/p&gt;&lt;p&gt;Main difference: Pessimistic lock doesn't allow other to update the records whereas optimistic allows anyone to update and hopes it will not face the conflict.&lt;/p&gt;&lt;p&gt;Use Cases: Database can use pessimistic locks but Google Shared Docs or Confluence etc can use pessimistic locks. Distributed systems use optimistic locks eg. elasticsearch version conflicts.&lt;/p&gt;&lt;p&gt;Few Conflicts: Use optimistic (it will be performant, but with more it won't)&lt;/p&gt;&lt;p&gt;More Conflicts: Use pessimistic.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="1290" width="450" height="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="&lt;h1&gt;OAuth &amp;amp; JWT&lt;/h1&gt;&lt;p&gt;OAuth: Used for Authorization (initially created for services). Services trying get access each other on behalf of user for this a standard created called OAuth. Usecase: When we want to give some part of access of our google photos to some other service without sharing the username and password.&lt;/p&gt;&lt;p&gt;JWT: Json web tokens - Popular way to do user authorization in web apps. Usecase: When we login site remembers you, you don't need to authenticate yourself for every different page visit. Can also be done using Session tokens. It works like this: When logs in, the server gives a signed JWT token to client for any subsequenct interaction user uses that token. In this case, server doesn't need to remember anything.&lt;/p&gt;&lt;p&gt;Session Token: Reference token&lt;/p&gt;&lt;p&gt;JWT token: Value token&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="540" y="1310" width="440" height="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="&lt;h1&gt;Load Balancers Type&lt;/h1&gt;&lt;p&gt;.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="1660" width="420" height="450" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

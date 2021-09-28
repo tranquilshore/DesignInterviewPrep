@@ -1,0 +1,97 @@
+<mxfile>
+    <diagram id="iw7n6Z60K5bpqzjOEqW7" name="Page-1">
+        <mxGraphModel dx="990" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1650" pageHeight="2000" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;h1&gt;Functional&lt;/h1&gt;&lt;p&gt;1. User Login (Organisation based)&lt;/p&gt;&lt;p&gt;2. User can send and received messages one-one&lt;/p&gt;&lt;p&gt;3. User can create/join channels and post messages there.&lt;/p&gt;&lt;p&gt;4. User can search for other users or channels&lt;/p&gt;&lt;p&gt;5. Sending Photos/Videos/Documents is allowed&lt;/p&gt;&lt;p&gt;6. Notification System&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="10" width="450" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;h1&gt;Non Functional&lt;/h1&gt;&lt;p&gt;1. Highly Scalable (able to handle load)&lt;/p&gt;&lt;p&gt;2. Highly Available (Consistency can take a hit)&lt;/p&gt;&lt;p&gt;3. Highly Performant&lt;/p&gt;&lt;p&gt;4. Highly Durable&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="530" y="10" width="420" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;h1&gt;Capacity Estimation&lt;/h1&gt;&lt;p&gt;Total Users - 100M&lt;/p&gt;&lt;p&gt;DAU - 10M&lt;/p&gt;&lt;p&gt;On avg user sends 50 msgs/day, On average 100kb/message&lt;/p&gt;&lt;p&gt;Incoming bandwidth - 100kb*50*10M = 50B = 50TB&lt;/p&gt;&lt;p&gt;Every 5th user sends photo - 10M/5*5mb = 10TB&lt;/p&gt;&lt;p&gt;Every 10th user sends videos - 10M/10*20mb = 20TB&lt;/p&gt;&lt;p&gt;Total incoming bandwidth = 80TB/daily = 945mb/sec&lt;/p&gt;&lt;p&gt;Outgoing will be the same.&lt;/p&gt;&lt;p&gt;80TB daily storage is required. For 5 years = 80*365*5 = 146PB&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="220" width="390" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;h1&gt;Public APIs&lt;/h1&gt;&lt;p&gt;1. registerUser(username,email,age,sex)&lt;/p&gt;&lt;p&gt;2. sendMessage(sender_id, receiver_id, message_id, message_description, photo_content, video_content)&lt;/p&gt;&lt;p&gt;3. search(user_name, channel_name, search_description)&lt;/p&gt;&lt;p&gt;4. createChannel(channel_name, channel_descriptoin)&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="210" width="420" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="&lt;h1&gt;DB Schema&lt;/h1&gt;&lt;p&gt;User Table&lt;/p&gt;&lt;p&gt;user_id&lt;/p&gt;&lt;p&gt;username&lt;/p&gt;&lt;p&gt;age&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Channel Table&lt;/p&gt;&lt;p&gt;channel_id&lt;/p&gt;&lt;p&gt;channel_description&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;User Channel Table&lt;/p&gt;&lt;p&gt;user_id&lt;/p&gt;&lt;p&gt;channel_id&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Message Table&lt;/p&gt;&lt;p&gt;sender_id&amp;nbsp;&lt;/p&gt;&lt;p&gt;receiver_id&lt;/p&gt;&lt;p&gt;message description&lt;/p&gt;&lt;p&gt;content_id&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Content Table&lt;/p&gt;&lt;p&gt;content_id&lt;/p&gt;&lt;p&gt;content_size&lt;/p&gt;&lt;p&gt;content_url&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="590" y="400" width="190" height="670" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Sender" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="1190" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Receiver" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="1350" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=-0.037;entryY=0.637;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="9" target="22">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="9" target="10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="LB" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="1110" width="40" height="460" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="430" y="1350" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="11" target="14">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.018;entryY=0.57;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="11" target="15">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="11" target="32">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=67.5;entryPerimeter=0;" edge="1" parent="1" source="11" target="36">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Chat Server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="1360" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Meta Data DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+                    <mxGeometry x="735" y="1250" width="90" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="HBase (Buffer,variable size data)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+                    <mxGeometry x="735" y="1400" width="90" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="420" y="1170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="23" target="25">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="23" target="10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="Session Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="430" y="1180" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Distributed Cache" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+                    <mxGeometry x="630" y="1130" width="110" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="29" target="9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="430" y="1580" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="Notification Service" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="1590" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.58;entryY=-0.037;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="32" target="29">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="DMQ" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;direction=west;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="1460" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="Object Store" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+                    <mxGeometry x="737.5" y="1550" width="85" height="100" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
